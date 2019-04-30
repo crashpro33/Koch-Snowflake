@@ -35,8 +35,8 @@ public class Koch_Snowflake extends JFrame implements GLEventListener {
 		setSize(600, 600);
 		
 		//Making sure we get a GL4 context for the canvas 
-        GLProfile profile = GLProfile.get(GLProfile.GL4);
-        GLCapabilities capabilities = new GLCapabilities(profile);
+        	GLProfile profile = GLProfile.get(GLProfile.GL4);
+        	GLCapabilities capabilities = new GLCapabilities(profile);
 		myCanvas = new GLCanvas(capabilities);
  		//end GL4 context
 		
@@ -61,7 +61,6 @@ public class Koch_Snowflake extends JFrame implements GLEventListener {
 		
 		gl.glGenBuffers(vbo.length, vbo, 0);
 		gl.glBindBuffer(GL_ARRAY_BUFFER, vbo[0]);
-
 	}
 	
 	public void display(GLAutoDrawable drawable) {	
@@ -227,6 +226,7 @@ public class Koch_Snowflake extends JFrame implements GLEventListener {
 		// Constructor passing the command line args
 		new Koch_Snowflake(args); 
 		}
+	
 	public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height) {}
 	public void dispose(GLAutoDrawable drawable) {}
 }
